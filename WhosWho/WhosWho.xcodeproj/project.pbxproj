@@ -24,6 +24,8 @@
 		FD112B051798550E00495F87 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD112ADD1798550E00495F87 /* Foundation.framework */; };
 		FD112B0D1798550E00495F87 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD112B0B1798550E00495F87 /* InfoPlist.strings */; };
 		FD112B101798550E00495F87 /* WhosWhoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD112B0F1798550E00495F87 /* WhosWhoTests.m */; };
+		FD112B1B17985AFB00495F87 /* WWEmployeeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FD112B1A17985AFB00495F87 /* WWEmployeeModel.m */; };
+		FD112B1E17985CC100495F87 /* WWEmployee.m in Sources */ = {isa = PBXBuildFile; fileRef = FD112B1D17985CC100495F87 /* WWEmployee.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		FD112B0C1798550E00495F87 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FD112B0E1798550E00495F87 /* WhosWhoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhosWhoTests.h; sourceTree = "<group>"; };
 		FD112B0F1798550E00495F87 /* WhosWhoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WhosWhoTests.m; sourceTree = "<group>"; };
+		FD112B1917985AFA00495F87 /* WWEmployeeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWEmployeeModel.h; sourceTree = "<group>"; };
+		FD112B1A17985AFB00495F87 /* WWEmployeeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployeeModel.m; sourceTree = "<group>"; };
+		FD112B1C17985CC100495F87 /* WWEmployee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWEmployee.h; sourceTree = "<group>"; };
+		FD112B1D17985CC100495F87 /* WWEmployee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWEmployee.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +131,11 @@
 				FD112AF61798550E00495F87 /* MainStoryboard_iPad.storyboard */,
 				FD112AF91798550E00495F87 /* WWEmployeeListTableViewController.h */,
 				FD112AFA1798550E00495F87 /* WWEmployeeListTableViewController.m */,
+				FD112B1C17985CC100495F87 /* WWEmployee.h */,
+				FD112B1D17985CC100495F87 /* WWEmployee.m */,
 				FD112AE21798550E00495F87 /* Supporting Files */,
+				FD112B1917985AFA00495F87 /* WWEmployeeModel.h */,
+				FD112B1A17985AFB00495F87 /* WWEmployeeModel.m */,
 			);
 			path = WhosWho;
 			sourceTree = "<group>";
@@ -278,6 +288,8 @@
 				FD112AE81798550E00495F87 /* main.m in Sources */,
 				FD112AEC1798550E00495F87 /* WWAppDelegate.m in Sources */,
 				FD112AFB1798550E00495F87 /* WWEmployeeListTableViewController.m in Sources */,
+				FD112B1B17985AFB00495F87 /* WWEmployeeModel.m in Sources */,
+				FD112B1E17985CC100495F87 /* WWEmployee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

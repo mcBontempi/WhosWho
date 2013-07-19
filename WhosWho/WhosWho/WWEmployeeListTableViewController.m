@@ -13,17 +13,24 @@
 @end
 
 @implementation WWEmployeeListTableViewController
+{
+  // I could have injected this, but to keep things simple it can live here;
+  WWEmployeeModel *_employeeModel;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+  UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+  [refreshControl addTarget:self action:@selector(refreshEmployeeList) forControlEvents:UIControlEventValueChanged];
+  self.refreshControl = refreshControl;
+  
+  [self refreshEmployeeList];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)refreshEmployeeList
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [_employeeModel refreshEmployees];
 }
 
 @end
